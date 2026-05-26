@@ -336,10 +336,10 @@ export function Dashboard() {
           </div>
 
           {/* Metric cards */}
-          <div className="grid grid-cols-4 gap-3">
+          <div className="grid grid-cols-4 gap-3 items-start">
             <Card>
-              <CardContent className="p-4">
-                <div className="flex items-center gap-2 mb-2">
+              <CardContent className="px-4 pt-3 pb-3">
+                <div className="flex items-center gap-2 mb-1.5">
                   <CheckCircle2 className="h-4 w-4 text-emerald-500" />
                   <span className="text-xs font-medium text-muted-foreground">Status geral</span>
                 </div>
@@ -348,8 +348,8 @@ export function Dashboard() {
               </CardContent>
             </Card>
             <Card>
-              <CardContent className="p-4">
-                <p className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-2">Uptime (30d)</p>
+              <CardContent className="px-4 pt-3 pb-3">
+                <p className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-1.5">Uptime (30d)</p>
                 <p className="text-2xl font-bold text-emerald-600">99.8%</p>
                 <div className="flex items-center gap-1 text-xs text-emerald-600 mt-0.5">
                   <TrendingUp className="h-3 w-3" /> +0.2% vs anterior
@@ -357,8 +357,8 @@ export function Dashboard() {
               </CardContent>
             </Card>
             <Card>
-              <CardContent className="p-4">
-                <p className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-2">Incidentes (30d)</p>
+              <CardContent className="px-4 pt-3 pb-3">
+                <p className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-1.5">Incidentes (30d)</p>
                 <p className="text-2xl font-bold">3</p>
                 <div className="flex items-center gap-1 text-xs text-emerald-600 mt-0.5">
                   <TrendingDown className="h-3 w-3" /> −40% vs anterior
@@ -366,8 +366,8 @@ export function Dashboard() {
               </CardContent>
             </Card>
             <Card>
-              <CardContent className="p-4">
-                <p className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-2">MTTR médio (30d)</p>
+              <CardContent className="px-4 pt-3 pb-3">
+                <p className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-1.5">MTTR médio (30d)</p>
                 <p className="text-2xl font-bold">6min</p>
                 <div className="flex items-center gap-1 text-xs text-muted-foreground mt-0.5">
                   <Minus className="h-3 w-3" /> estável
